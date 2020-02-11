@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/LuckyExpress/cypress-amazon/issues"
   },
-  "homepage": "https://github.com/LuckyExpress/cypress-amazon#readme"
+  "homepage": "https://github.com/LuckyExpress/cypress-amazon#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^4.0.1"
+  }
 }
