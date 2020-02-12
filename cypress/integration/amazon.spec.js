@@ -7,7 +7,9 @@ context("Actions", () => {
     );
   });
 
-  before(()=>{});
+  before(()=>{
+    // debug
+  });
 
   it("face mask", () => {
     cy.contains("マスク ふつうサイズ");
