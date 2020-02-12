@@ -7,6 +7,8 @@ context("Actions", () => {
     );
   });
 
+  before(()=>{});
+
   it("face mask", () => {
     cy.contains("マスク ふつうサイズ");
     cy.contains("1-Click™で今すぐ買う");
