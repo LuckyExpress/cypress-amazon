@@ -8,13 +8,9 @@ context("Actions", () => {
   });
 
   it("face mask", () => {
-    //availability
     cy.PingAvailable();
 
-    //cy.contains("マスク ふつうサイズ").should('be.visible').then(() => {
-    //  cy.reload();
-    //});
-
-    //cy.contains("1-Click™で今すぐ買う");
+    cy.contains("マスク ふつうサイズ");
+    cy.contains("1-Click™で今すぐ買う");
   });
 });

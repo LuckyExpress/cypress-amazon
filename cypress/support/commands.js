@@ -24,5 +24,10 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 Cypress.Commands.add("PingAvailable", () => { 
-  cy.reload();
+  cy.get('body').then(($body) => {
+    if($body.text().includes('現在在庫切れです。') || $body.text().includes('Currently unavailable.')){
+      cy.reload();
+      cy.PingAvailable();
+    }
+  })
 });
