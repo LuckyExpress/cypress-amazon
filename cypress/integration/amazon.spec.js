@@ -13,10 +13,11 @@ context("Actions", () => {
 
   it("face mask", () => {
     cy.PingAvailable();
+    cy.get("#one-click-button").click();
 
     // cy.contains("マスク ふつうサイズ");
     // cy.contains("1-Click™で今すぐ買う");
-    cy.get("#one-click-button").click();
+    // cy.get("#one-click-button").click();
     // cy.get("#buy-now-button").click();
     // cy.get("#nav-cart").click();
     // cy.get("input.proceedToRetailCheckout").click();

@@ -27,7 +27,7 @@ Cypress.Commands.add("PingAvailable", () => {
   cy.get("body").then($body => {
     // if($body.text().includes('現在在庫切れです。') || $body.text().includes('Currently unavailable.') || $body.text().includes('See All Buying Options')){
     if (!$body.text().includes("Buy now with 1-Click")) {
-      cy.wait(15000);
+      cy.wait(10000);
       cy.reload();
       cy.PingAvailable();
     }
